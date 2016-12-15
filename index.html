@@ -1,6 +1,7 @@
 <html>
-  <head>
-    <link rel="icon" type="image/png" href="img/favicon.ico"/>
+
+<head>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -9,11 +10,13 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa" rel="stylesheet">
 
+    <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Custom Styling -->
-    <link rel="stylesheet" type="text/css" href="style_v1.3.css">
+    <link rel="stylesheet" type="text/css" href="style_v1.5.css">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
@@ -22,140 +25,155 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
+
+    <!--getmdl.io deps-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <!--getmdl.io deps-->
+
     <title> Dan & Anna's Wedding </title>
 
-      <script type="text/javascript">
+    <script type="text/javascript">
         $(window).load(function() {
-          // Animate loader off screen
-          $(".se-pre-con").fadeOut("slow");
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");
         });
     </script>
 
 
     <script type='text/javascript' src='js/loadImg.js'></script>
-  </head>
+</head>
 
-  <body class="loading">
+<body class="loading">
     <div class="se-pre-con"></div>
 
-      <div id="preload">
+    <div id="preload">
         <img class="main-img" src="img/P1260107.jpg">
         <img class="main-img" src="img/P1250823.jpg">
         <img class="main-img" src="img/P1250823.jpg">
         <img class="main-img" src="img/P1260139.jpg">
-      </div>
+    </div>
 
-      <main>
-        <div class="sidebar">
+    <main>
+        <!--         <div class="sidebar minor-text">
             <div class="navigation"><a class="link" href="#firstPicture">Home</a></div>
             <div class="navigation"><a class="link" href="#details">Details</a></div>
             <div class="navigation"><a class="link" href="#rsvp">RSVP</a></div>
             <div class="navigation"><a class="link" href="#hotels">Hotels</a></div>
-        </div>
+        </div> -->
 
         <section id="firstPicture" class="large-screen">
-          <div class="flex-column">
-            <div class="main-title">ANNA & DANIEL</div>
-            <div class="sub">are getting married</div>
-          </div>
+            <div class="firstPicture-text">
+                <div class="main-title major-text">ANNA & DANIEL</div>
+                <div class="sub minor-text off-center">Are Getting Married</div>
+            </div>
         </section>
 
-
+        <section class="firstPicture-small">
+            <img src="img/P1260107-cropped.jpg" style='height: 1400px; ' />
+            <div class="firstPicture-text">
+                <div class="main-title major-text">ANNA & DANIEL</div>
+                <div class="sub small-sub minor-text off-center">Are Getting Married</div>
+            </div>
+        </section>
 
         <div class="details-background">
-          <section class="content">
+            <section class="content">
+                <div class="flex-column">
+                    <div class="said-yes major-text" style="padding-bottom: 40px;">SHE SAID YES!</div>
+
+                    <div class="photo">
+                        <div class="photo-container">
+                            <img class="happy-couple" src="img/P1260139.jpg">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="details">
+                <div class="flex-row">
+                    <div class="wedding">
+                        <p class="major-text">THE</p>
+                        <p class="major-text">WEDDING</p>
+                        <p class="major-text">DAY</p>
+                        <div class="wedding-text"> </div>
+                        <div class="wedding-background"></div>
+                    </div>
+                    <div class="details">
+                        <div class="wedding-heading major-text">
+                            <p>When</p>
+                        </div>
+                        <div class="wedding-details minor-text">
+                            <p>Saturday, 28th October, 2017</p>
+                            <p>Wedding Ceremony: 1:00 pm</p>
+                            <p>Evening Party: TBC</p>
+                        </div>
+
+                        <div class="wedding-heading major-text">
+                            <p style="padding-top: 40">Where</p>
+                        </div>
+                        <div class="wedding-details minor-text">
+                            <p>Cisbury Barn, </p>
+                            <p>Nepcote, Findon,</p>
+                            <p>West Sussex,</p>
+                            <p>BN14 0SR</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="rsvp">
             <div class="flex-column">
-                <div class="title" style="padding-bottom: 40px;">SHE SAID YES!</div>
-
-                <div class="photo">
-                  <div class="photo-container">
-                    <img class="happy-couple" src="img/P1260139.jpg">
-                  </div>
+                <div>
+                    <a
+                      class="waves-effect waves-light btn-large indigo"
+                      target="_blank"
+                      href="https://goo.gl/forms/GlU581H5atSww1I63">RSVP</a>
                 </div>
-
-            </div>
-          </section>
-
-        <section id="details">
-          <div class="flex-row">
-              <div class="wedding">
-
-
-                <p>THE</p> 
-                <p>WEDDING</p>
-                <p>DAY</p>
-                <div class="wedding-text"> </div>
-                <div class="wedding-background"></div>
-              </div>
-              <div class="details">
-                <div class="wedding-heading">
-                  <p>When</p> 
-                </div>
-                <div class="wedding-details"> 
-                  <p>Saturday, 28th October, 2017</p>  
-                  <p>Wedding Ceremony: 1:00 pm</p>
-                  <p>Evening Party: TBC</p>
-                </div>
-
-                <div class="wedding-heading">
-                  <p style="padding-top: 40">Where</p> 
-                </div>
-                <div class="wedding-details">
-                <p >Cisbury Barn, </p>
-                <p >Nepcote, Findon,</p>
-                <p >West Sussex,</p>
-                <p >BN14 0SR</p>
+                <div class="sub small-sub minor-text">
+                  Kindly Respond By 28th August 2017
                 </div>
               </div>
-          </div>
         </section>
-      </div>
 
-      <section id="rsvp">
-        <div class="flex-column">
-          <div>
-            <a 
-              class="waves-effect waves-light btn-large blue accent-1" 
-              target="_blank" 
-              href="https://goo.gl/forms/GlU581H5atSww1I63">RSVP</a>
-          <div>
-          <div class="sub">Kindly Respond By 28th August 2017<div>
-        </div>
-      </section>
+        <section class="thirdPicture large-screen"></section>
 
-      <section class="thirdPicture"></section>
+        <section class="thirdPicture-small">
+            <img src="img/P1220977.jpg" style='width:100%' />
+        </section>
 
-      <section id="hotels">
-        <div class="flex-column">
-          <div class="sub hotels-text">
-            There is a lot of accommodation in the area, but please book as early as you can to avoid missing out on some great places
-          </div>
-          <div>
-            <a 
-              class="waves-effect waves-light btn-large blue accent-1" 
-              target="_blank" 
-              href="https://docs.google.com/document/d/1MTNpTQs8FQE0Dsf41xGsGOsKWeMfJQOdn4ADEZK0_hA/edit?usp=sharing">
-                
-                <div class="button-text">Accommodation</div>
-              </a>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <picture>
-          <img src="img/P1250823.jpg" style="width:100%">
-        </picture>
-      </section>
-        
-      <section class="end">
-        <div class="flex-column">
-            <div class="sub end-text">
-              <p>Looking forward to seeing you all soon</p>
-              <p>x x x</p>
+        <section id="hotels">
+            <div class="flex-column">
+                <div class="sub hotels-text small-sub minor-text">
+                    There is a lot of accommodation in the area,
+                    but please book early to avoid missing out on some great places!
+                </div>
+                <div>
+                    <a class="waves-effect waves-light btn-large indigo" target="_blank" href="https://docs.google.com/document/d/1MTNpTQs8FQE0Dsf41xGsGOsKWeMfJQOdn4ADEZK0_hA/edit?usp=sharing">
+                        <div class="button-text">Accommodation</div>
+                    </a>
+                </div>
             </div>
-        </div>
-      </section>     
+        </section>
+
+        <section>
+            <picture>
+                <img src="img/P1250823.jpg" style="width:100%">
+            </picture>
+        </section>
+
+        <section class="end">
+            <div class="flex-column">
+                <div class="sub end-text small-sub minor-text">
+                    <p>Looking forward to seeing you all soon</p>
+                    <p>x x x</p>
+                </div>
+            </div>
+        </section>
     </main>
-  </body>
+</body>
+
 </html>

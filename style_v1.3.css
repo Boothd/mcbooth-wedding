@@ -1,128 +1,32 @@
-@media (min-width:320px)  { 
-	/* smartphones, iPhone, portrait 480x320 phones */ 
+/* SMALL */
+@media only screen and (max-width: 961px) {
+		/* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	#firstPicture{
-	  	background:url(img/P1260107-small.jpg);
-	  	background-size: cover;
-	  	background-position: center;
-
-		text-align:center; 
-		position:relative;
-		height: 100%;
-
-		display: -webkit-flex;
-		display: flex;
+		display: none;
 	}
 	.thirdPicture{
-	  	background:url(img/P1220977-small.JPG);
-	    background-position: center;
-	    background-size: cover;
-
-		text-align:center; 
-		position:relative;
-		height: 70%;
-
-		display: -webkit-flex;
-		display: flex;
+		display: none;
 	}
 	.sidebar{
 		display: none;
 	}
-}
-@media (min-width:481px)  { 
-	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-	#firstPicture{
-	  	background:url(img/P1260107-small.jpg);
-	  	background-size: cover;
-	  	background-position: center;
-
-		text-align:center; 
-		position:relative;
-		height: 100%;
-
-		display: -webkit-flex;
+	.firstPicture-small{
+		position: relative; 
 		display: flex;
-	}
-	.thirdPicture{
-	  	background:url(img/P1220977-small.JPG);
-	    background-position: center;
-	    background-size: cover;
-
-		text-align:center; 
-		position:relative;
-		height: 70%;
-
 		display: -webkit-flex;
-		display: flex;
 	}
-	.sidebar{
-		display: none;
+	.thirdPicture-small{
+=		display: inline;
+=	}
+	.firstPicture-small-text{
+		position: absolute; 
+		text-align:center; 
+		width: 100%;
 	}
 }
-@media (min-width:641px)  { 
-	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-	#firstPicture{
-	  	background:url(img/P1260107-small.jpg);
-	  	background-size: cover;
-	  	background-position: center;
 
-		text-align:center; 
-		position:relative;
-		height: 100%;
-
-		display: -webkit-flex;
-		display: flex;
-	}
-	.thirdPicture{
-	  	background:url(img/P1220977-small.JPG);
-	    background-position: center;
-	    background-size: cover;
-
-		text-align:center; 
-		position:relative;
-		height: 70%;
-
-		display: -webkit-flex;
-		display: flex;
-	}
-	.sidebar{
-		display: none;
-	}
-}
-@media (min-width:961px)  { 
-	/* tablet, landscape iPad, lo-res laptops ands desktops */ 
-	#firstPicture{
-	  	background:url(img/P1260107.jpg);
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-
-		text-align:center; 
-		position:relative;
-		height: 100%;
-
-		display: -webkit-flex;
-		display: flex;
-	}
-	.thirdPicture{
-	  	background:url(img/P1220977.JPG);
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-
-		text-align:center; 
-		position:relative;
-		height: 70%;
-
-		display: -webkit-flex;
-		display: flex;
-	}
-	.sidebar{
-		display: none;
-	}
-}
-@media (min-width:1025px) { 
+/* BIG */
+@media (min-width:962px) { 
 	/* big landscape tablets, laptops, and desktops */ 
 	#firstPicture{
 	  	background:url(img/P1260107.jpg);
@@ -155,41 +59,15 @@
 	.sidebar {
 	    display: flex;
 	}
+	.firstPicture-small{
+		display: none;
+	}
+	.thirdPicture-small{
+		display: none;
+	}
+
 }
-@media (min-width:1281px) { 
-	/* hi-res laptops and desktops */ 
-	#firstPicture{
-	  	background:url(img/P1260107.jpg);
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
 
-		text-align:center; 
-		position:relative;
-		height: 100%;
-
-		display: -webkit-flex;
-		display: flex;
-	}
-	.thirdPicture{
-	  	background:url(img/P1220977.JPG);
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
-
-		text-align:center; 
-		position:relative;
-		height: 70%;
-
-		display: -webkit-flex;
-		display: flex;
-	}
-	.sidebar {
-	    display: flex;
-	}
-}
 
 html, body{
   margin:0px; padding:0px;
@@ -225,7 +103,6 @@ header a{
 
 .navigation{
 	padding-bottom: 12px;
-
 }
 
 .flex-column{
@@ -343,7 +220,6 @@ position: relative;
 	display: -webkit-flex;
 	display: flex;
 	text-align:center; 
-	position:relative;
 	padding-top: 50;
 	padding-bottom: 50;
 }
